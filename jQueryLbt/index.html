@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>商品详情轮播图</title>
+    <style>
+        body, html {
+            width: 100%;
+            background-color: #2E2E2E;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+
+        .slide {
+            position: relative;
+            margin: 10% auto;
+            width: 500px;
+            overflow: hidden;
+        }
+
+        .slide .big {
+            position: relative;
+            overflow: hidden;
+            left: 0;
+            top: 0;
+        }
+
+        .slide a.prev,.slide a.next{
+            position: absolute;
+            top: 220px;
+            opacity: 0;
+            z-index: 1000;
+        }
+
+        .slide .big li {
+            float: left;
+            width: 500px;
+            position:relative;
+        }
+        .slide .big li .title{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 567px;
+            height: 35px;
+            background: #000;
+            opacity: 0.5;
+        }
+        .slide .big li  .title_con{
+            position: absolute;
+            left: 8px;
+            bottom: 8px;
+            color: #FFF;
+            font-size: 12px;
+            width: 550px;
+        }
+        .slide .big li>ul,.slide .big li .title_con ul>li{
+            width:100%;
+            height:100%;
+        }
+        .slide .big li a{
+            display:block;
+            width:100%;
+            height:100%;
+        }
+
+        .slide .big li a img {
+            width: 100%;
+            display: block;
+        }
+
+        .slide .prev {
+            left: -10px;
+        }
+
+        .slide .next {
+            right: -10px;
+        }
+
+        .slide .small {
+            margin-top: 5px;
+            width: 100%;
+            position: relative;
+        }
+
+        .slide .small li {
+            float: left;
+            margin-right: 5px;
+            width: 121px;
+            background: #000;
+        }
+
+        .slide .small li:last-child {
+            margin-right: 0;
+        }
+
+        .slide .small li img {
+            width: 100%;
+            display: block;
+            opacity: 0.5;
+        }
+    </style>
+    <script src="single_lb.js"></script>
+    <script src="move1.js"></script>
+</head>
+<body>
+<div class="slide" id="single_lb">
+    <a href="javascript:;" class="prev"><img src="images2/prev.png"></a>
+    <a href="javascript:;" class="next"><img src="images2/next.png"></a>
+    <ul class="big">
+        <li>
+            <a href="index2.html"><img src="images2/a1.jpg"></a>
+            <div class="title"></div>
+            <div class="title_con">
+                <ul>
+                    <li>“增材制造（3D打印）推进工程”正式发布</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;"><img src="images2/a2.jpg"></a>
+            <div class="title"></div>
+            <div class="title_con">
+                <ul>
+                    <li>“增材制造（3D打印）推进工程”正式发布</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;"><img src="images2/a3.jpg"/></a>
+            <div class="title"></div>
+            <div class="title_con">
+                <ul>
+                    <li>“增材制造（3D打印）推进工程”正式发布</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;"><img src="images2/a4.jpg"></a>
+            <div class="title"></div>
+            <div class="title_con">
+                <ul>
+                    <li>“增材制造（3D打印）推进工程”正式发布</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;"><img src="images2/a5.jpg"></a>
+            <div class="title"></div>
+            <div class="title_con">
+                <ul>
+                    <li>“增材制造（3D打印）推进工程”正式发布</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+    <ol class="small">
+        <li><img style="opacity:1" src="images2/a1.jpg"></li>
+        <li><img src="images2/a2.jpg"></li>
+        <li><img src="images2/a3.jpg"></li>
+        <li><img src="images2/a4.jpg"></li>
+        <li><img src="images2/a5.jpg"></li>
+    </ol>
+
+</div>
+</body>
+</html>
